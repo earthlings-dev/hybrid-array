@@ -14,7 +14,7 @@ categories = ["no-std", "data-structures"]
 keywords = ["generic-array"]
 readme = "README.md"
 edition = "2024"
-rust-version = "1.93.0"
+rust-version = "1.93"
 
 [dependencies]
 typenum = { version = "1.19", features = ["const-generics"] }
@@ -73,7 +73,7 @@ unused_lifetimes = "warn"
 unused_qualifications = "warn"
 
 [patch.crates-io]
-serde = { path = "../serde/serde" }
+serde = { git = "https://github.com/earthlings-dev/serde.git" }
 
 [package.metadata.docs.rs]
 all-features = true
