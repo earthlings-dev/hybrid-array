@@ -14,10 +14,10 @@ categories = ["no-std", "data-structures"]
 keywords = ["generic-array"]
 readme = "README.md"
 edition = "2024"
-rust-version = "1.85"
+rust-version = "1.93.0"
 
 [dependencies]
-typenum = { version = "1.17", features = ["const-generics"] }
+typenum = { version = "1.19", features = ["const-generics"] }
 
 # optional dependencies
 arbitrary = { version = "1", optional = true }
@@ -71,6 +71,9 @@ trivial_casts = "warn"
 trivial_numeric_casts = "warn"
 unused_lifetimes = "warn"
 unused_qualifications = "warn"
+
+[patch.crates-io]
+serde = { path = "../serde/serde" }
 
 [package.metadata.docs.rs]
 all-features = true
