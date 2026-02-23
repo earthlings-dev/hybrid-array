@@ -73,7 +73,7 @@ unused_lifetimes = "warn"
 unused_qualifications = "warn"
 
 [patch.crates-io]
-serde = { git = "https://github.com/earthlings-dev/serde.git" }
+serde = { path = "../serde/serde" }
 
 [package.metadata.docs.rs]
 all-features = true
